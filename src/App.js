@@ -12,6 +12,9 @@ import Producto from "./components/Producto";
       {id: 4, nombre: 'Camisa Angular', precio:20}
     ]); 
 
+
+    const [carrito, agregarProducto] = useState([])
+
     const fecha =  new Date().getFullYear();
 
     return (
@@ -27,6 +30,9 @@ import Producto from "./components/Producto";
           <Producto
             key={producto.id}
             producto= {producto}
+            carrito={carrito}
+            productos= {productos}
+            agregarProducto = {agregarProducto}
           />
          ))
        }
