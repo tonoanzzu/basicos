@@ -17,9 +17,9 @@ const Producto = ({producto, carrito, agregarProducto, productos}) => {
         //console.log(id)
         const producto = carrito.filter( producto => producto.id !== id);
         //console.log(producto)
-        agregarProducto([
+        agregarProducto(
             producto
-        ])
+        )
     }
 
 
